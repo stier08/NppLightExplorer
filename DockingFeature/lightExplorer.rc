@@ -1,0 +1,199 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LIGHTEXPLORER DIALOGEX 26, 41, 223, 294
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_WINDOWEDGE
+CAPTION "Light Explorer"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TREECTRL,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP | 0x800,3,5,216,286
+END
+
+IDD_FAVORITES_FOLDER_NAME DIALOGEX 0, 0, 285, 50
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Light Explorer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,7,26,205,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,228,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,228,24,50,14
+    LTEXT           "Favorites folder name",IDC_STATIC,10,9,126,8
+END
+
+IDD_HELP_DLG DIALOGEX 0, 0, 272, 289
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,110,268,50,14
+    LTEXT           "dengGB.balandro@gmail.com",IDC_EMAIL_LINK,93,65,123,8
+    LTEXT           "Author:\t\t\tJose Javier Sanjosé",IDC_STATIC,12,31,183,9
+    GROUPBOX        "Menu entries",IDC_STATIC,7,94,255,55
+    LTEXT           "eMail:",IDC_STATIC,12,65,21,9
+    LTEXT           "Light Explorer ...\t\tToggle the light explorer pane visibility\n\t\t\t\t(ALT + A)",IDC_STATIC,15,109,239,19
+    CTEXT           "LightExplorer UNICODE Plugin for Notepad++                    v2.0",IDC_STATIC,7,7,257,17,SS_CENTERIMAGE,WS_EX_DLGMODALFRAME | WS_EX_TRANSPARENT
+    LTEXT           "URL:",IDC_STATIC,12,80,21,9
+    LTEXT           "http://sourceforge.net/projects/npp-plugins",IDC_NPP_PLUGINS_URL,94,80,147,8
+    LTEXT           "Help ...\t\t\t\tShows this help dialog",IDC_STATIC,15,134,239,12
+    GROUPBOX        "Context menu entries",IDC_STATIC,7,155,253,108
+    LTEXT           "Load the tree on startup\t\tThis will remeber the position of the tree\n\t\t\t\tfrom last session",IDC_STATIC,15,168,239,16
+    LTEXT           "Use system icons\t\tThis will use the file types icons",IDC_STATIC,15,191,239,10
+    LTEXT           "Synchronize tree with ...\t\tThis will display the position of the\n\t\t\t\tcurrent document in the tree",IDC_STATIC,15,208,239,17
+    LTEXT           "Search from here\t\tOpens the find in files dialog from that\n\t\t\t\tfolder. If the SearchInFiles plugin is\n\t\t\t\tpresent, it is called instead",IDC_STATIC,15,231,239,25
+    LTEXT           "UNICODE code update:\tJugoslav Dujic",IDC_STATIC,12,46,183,9
+END
+
+IDD_EDIT_DLG DIALOGEX 0, 0, 285, 50
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Light Explorer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT,7,27,213,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,228,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,228,26,50,14
+    LTEXT           "Error!",IDC_EDIT_MESSAGE,7,7,215,8
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FAVORITES_FOLDER_NAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_EDIT_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x0L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0a04b0"
+        BEGIN
+            VALUE "FileDescription", "lightExplorer"
+            VALUE "FileVersion", "2, 0, 0, 0"
+            VALUE "InternalName", "lightExplorer"
+            VALUE "LegalCopyright", "Copyright (C) 2007"
+            VALUE "OriginalFilename", "lightExplorer.rc"
+            VALUE "ProductName", " lightExplorer"
+            VALUE "ProductVersion", "2, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0a, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TB_LIGHTEXPLORER    BITMAP                  "res\\lightExplorer.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LIGHTEXPLORER       ICON                    "res\\lightExplorer.ico"
+#endif    // Spanish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
